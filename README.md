@@ -15,7 +15,8 @@ Get the VMNET and VMNETPREFIX and update the same in Vagrantfile. These values c
 * For Mac OS - /Library/Preferences/VMware\ Fusion/networking
 * For Linux - /etc/vmware/networking
 
-for e.g - VMNET = 2, VMNETPREFIX=10.2.2
+for e.g - VMNET = 2, VMNETPREFIX=10.2.2  
+
 ```answer VNET_2_DHCP yes
 answer VNET_2_DHCP_CFG_HASH B57E323EF23D75491F83BA69CE6738AC3E9B719C
 answer VNET_2_HOSTONLY_NETMASK 255.255.255.0
