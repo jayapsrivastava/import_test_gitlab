@@ -29,5 +29,20 @@ Get a working Campaign Storage environment with DS3 object store:
 
 # Useful information
 
-`vagrant rsync` - sync folder to the guest VM. Path at guest VM `/vagrant`
+* vagrant ssh-config
+
+Host vm1  
+  HostName 192.168.2.20  
+  User vagrant  
+  Port 22  
+  UserKnownHostsFile /dev/null  
+  StrictHostKeyChecking no  
+  PasswordAuthentication no  
+  IdentityFile /Users/jaya/camstor/test_mac/images-master-583590ee5404ced3e815b40d115a3c737d17e668/camstor/.vagrant/machines/vm1/vmware_fusion/private_key  
+  IdentitiesOnly yes  
+  LogLevel FATAL  
+  
+* scp -P Port -i IdentityFile FILE_COPY User@HostName:/some-dir  
+
+* vagrant rsync - sync folder to the guest VM. Path at guest VM `/vagrant`
 NOTE : Once folder copied, move it some other location because at reboot or vagrant reload vagrant doesn’t preserve the synced folder.
